@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Movie Popularity Details</title>
+</head>
+<body>
+
+<h1>Movie Popularity Details</h1>
+
+{% for row in rows %}
+    <p>Movie:
+        <b> <a href={{ url_for('all_details', id= row['id']) }}>{{ row["id"] }}</a></b> |
+        {{ row["title"] }} |
+        {{ row["original_lang"] }} |
+        {{ row['popularity'] }} |
+        {{ row['vote_count'] }} |
+        {{ row['vote_average'] }}
+    </p>
+{% endfor %}
+</body>
+</html>

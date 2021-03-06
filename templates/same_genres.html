@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Same Genres Movie</title>
+</head>
+<body>
+
+    <h1>Same Genres Movie</h1>
+
+    <p>Details of items in the same genres movie:</p>
+    {% for genres in allGenres %}
+    <p>
+       <b> {{ genres["id"] }}</b> |
+       Movie Title: {{ popular[genres["popular_id"]][1] }}
+    </p>
+    {% endfor %}
+</body>
+</html>

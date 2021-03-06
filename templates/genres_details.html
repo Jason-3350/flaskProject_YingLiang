@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Movie Genres Details</title>
+</head>
+<body>
+
+<h1>Movie Genres Details</h1>
+
+{% for row in rows %}
+    <p>Movie:
+        <b> <a href={{ url_for('same_genres', id= row['id']) }}>{{ row["id"] }}</a></b> |{{ row["movieGenres"] }}
+    </p>
+{% endfor %}
+</body>
+</html>

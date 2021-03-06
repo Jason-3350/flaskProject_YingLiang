@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Movie Overview Details</title>
+</head>
+<body>
+
+<h1>Movie Overview Details</h1>
+
+{% for row in rows %}
+    <p>Movie:
+        <b> <a href={{ url_for('all_details', id= row['id']) }}>{{ row["id"] }}</a></b> |{{ row["movieView"] }}
+    </p>
+{% endfor %}
+</body>
+</html>
