@@ -16,12 +16,24 @@ We need to start by setting up our development environment by executing these co
         source .venv/bin/activate # this activates the virtual environment
         pip install --upgrade pip [ this is optional]  # this installs pip, and upgrades it if required.
 
+We can now add the testing library Behave, along with Selenium for and the appropriate web drivers for your system, which you can find at https://selenium-python.readthedocs.io/installation.html#drivers 
+        pip install flask
+        pip install behave
+        pip install selenium		
+To update an already installed behave version, use:
+		pip install -U behave
+
 ## Setting up the Assessment of flask project
 Run the setup_db.py file to create the tables, and read the data from CSV files and write into tables.
 
-Load the application settings into your terminal and start the server with 
+## Load the application settings into your terminal and start the server with 
 
         export FLASK_APP=app.py 
         export FLASK_ENV=development
         python3 -m flask run 
 		
+## Check the tests
+Run the current tests to see that the genres pages load, with the command in the terminal. 
+
+        behave
+
