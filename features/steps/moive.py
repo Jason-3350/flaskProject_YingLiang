@@ -1,11 +1,13 @@
 from behave import given, when, then
 
+
 @given(u'I navigate to the genres_details pages')
 def nav(context):
     """ 
     Navigate to the genres page
     """
     context.browser.get('http://localhost:5000/')
+
 
 @when(u'I click on the link to genres details')
 def click(context):
@@ -14,6 +16,7 @@ def click(context):
     """
     context.browser.find_element_by_partial_link_text('2').click()
     # context.browser.get('http://localhost:5000/genres_details')
+
 
 @then(u'I should see the order for that genres')
 def details(context):

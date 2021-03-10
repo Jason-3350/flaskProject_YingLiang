@@ -99,3 +99,7 @@ def all_details(id):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
+
+
+# Reference：
+# scharlau/shopping_testing_p (2021). Available at: https://github.com/scharlau/shopping_testing_p (Accessed: 9 March 2021).
